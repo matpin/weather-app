@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <main class="mainContainer">
+        <div class="searchBarContainer">
+            <div class="dateContainer"></div>
+            <div class="inputContainer">
+                <input class="searchBar" type="text">
+                <span class="delete" hidden>
+                    <i class="fa-solid fa-x"></i>
+                </span>
+                <i class="fa-solid fa-magnifying-glass fa-xl searchBtn"></i> 
+            </div>
+            <div class="loadingClouds">
+                <i class="fa-solid fa-cloud fa-4x cloudBig"></i>
+                <i class="fa-solid fa-cloud fa-3x cloudSmall"></i>
+            </div>
+        </div>
+        <div class="tempContainer">
+            <div class="tempContainerInner" hidden>
+                <div class="locationWeather"></div>
+                <div class="tempContainerDetails">
+                    <div class="imgContainer"></div>
+                    <div class="onlyTempCont">
+                        <div class="onlyTemp">
+                            <div class="temperature"></div>
+                            <div class="tempChange">
+                                <button class="celsiusTemp" hidden>°C</button>
+                                <button class="fahrenheitTemp" hidden>°F</button>
+                            </div>
+                        </div>
+                        <div class="feelsLike"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weatherContainer">
+            <div class="weatherContainerInner" hidden>
+                <div class="weatherContainerSecond">
+                    <div class="weather"></div>
+                    <div class="details">
+                        <div class="humidity"></div>
+                        <div class="wind"></div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="forecastContainer">
+            <div class="forecastInner" hidden>
+                <div class="forecastSecond">
+                    <div class="forecastDayOne">
+                        <div class="forecastDay1"></div>
+                        <div class="forecastIcon1"></div>
+                        <div class="forecastTemp1"></div>
+                    </div>
+                    <div class="forecastDayTwo">
+                        <div class="forecastDay2"></div>
+                        <div class="forecastIcon2"></div>
+                        <div class="forecastTemp2"></div>
+                    </div>
+                    <div class="forecastDayThree">
+                        <div class="forecastDay3"></div>
+                        <div class="forecastIcon3"></div>
+                        <div class="forecastTemp3"></div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
